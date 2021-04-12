@@ -190,7 +190,7 @@ module.exports = {
         if(Number(category) && filtro){
             console.log('se esta ejecutando categoria y filtro')
             db.Products.findAll({
-                limit : 4,
+                limit : 6,
                 offset : Number(limite),
                 include:[
                 {association:'imagenes'},
@@ -224,7 +224,7 @@ module.exports = {
                 console.log(category)
 
                 db.Products.findAll({
-                    limit : 4,
+                    limit : 6,
                     offset : Number(limite),
                     include:[
                     {association:'imagenes'},
@@ -253,7 +253,7 @@ module.exports = {
             }
 
             db.Products.findAll({
-                limit : 4,
+                limit : 6,
                 offset : Number(limite),
                 include:[
                 {association:'imagenes'},
@@ -278,7 +278,7 @@ module.exports = {
         }else if(Number(category)){
             console.log('se esta ejecutando categoria')
             db.Products.findAll({
-                limit : 4,
+                limit : 6,
                 offset : Number(limite),
                 include:[
                 {association:'imagenes'},
@@ -306,7 +306,7 @@ module.exports = {
                 console.log(category)
 
                 db.Products.findAll({
-                    limit : 4,
+                    limit : 6,
                     offset : Number(limite),
                     include:[
                     {association:'imagenes'},
@@ -335,7 +335,7 @@ module.exports = {
             }
 
             db.Products.findAll({
-                limit : 4,
+                limit : 6,
                 offset : Number(limite),
                 include:[
                 {association:'imagenes'},
@@ -360,7 +360,7 @@ module.exports = {
 
         }else{
             console.log("no se esta ejecutando nada")
-            db.Products.findAll({limit : 4,
+            db.Products.findAll({limit : 6,
                 offset : Number(limite),
                 include:[
                 {association:'imagenes'},
